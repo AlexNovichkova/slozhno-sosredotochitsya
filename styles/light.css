@@ -3,10 +3,54 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-light {
+  /* Переменные светлой темы */    
+  --main-font: 'IBM Plex mono';
+  --bg-color: #FFF1F7;
+  --title-text-color:#FFC2E6;
+  --heading-text-color:#353430;
+  --paragraphs-text-color:#353430;
+  --accent-color: #FF8DCB;
+  --paragraphes-bg-color:#FF8DCB;
+  --decorative-color:#000028;
+  --bg-img:url(../images/cover-image-light.png);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+        /* Дублируем переменные светлой темы */    
+        --main-font: 'IBM Plex mono';
+        --bg-color: #FFF1F7;
+        --paragraphes-bg-color:#FF8DCB;
+        --title-text-color:#FFC2E6;
+        --heading-text-color:#353430;
+        --accent-color: #FF8DCB;
+        --paragraphs-text-color:#353430;
+        --decorative-color:#000028;
+        --bg-img:url(../images/cover-image-light.png);
+    }
+
+  
+  .decorative_element {
+    display: none;
+  }
+  
+
+}
+
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-font: 'IBM Plex mono';
+  --bg-color: #FFF1F7;
+  --title-text-color:#FFC2E6;
+  --heading-text-color:#353430;
+  --paragraphs-text-color:#353430;
+  --accent-color: #FF8DCB;
+  --paragraphes-bg-color:#FF8DCB;
+  --decorative-color:#000028;
+  --bg-img:url(../images/cover-image-light.png);
+}
+
+.theme_light .decorative_element {
+  display: none;
 }
