@@ -1,4 +1,4 @@
-:root.theme-dark {
+:root.theme_dark {
   --main-font: "IBM Plex mono";
   --bg-color: #000028;
   --title-text-color: #db00ff;
@@ -9,34 +9,6 @@
   --paragraphes-bg-color: #ff0070;
   --decorative-color: #ff0070;
   --bg-img: url(../images/cover-image-dark.png);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-font: "IBM Plex mono";
-    --bg-color: #000028;
-    --title-text-color: #db00ff;
-    --heading-text-color: #000028;
-    --paragraphs-text-color: #f1b2ce;
-    --another-accent-color: #ff0070;
-    --accent-color: #ff0070;
-    --paragraphes-bg-color: #ff0070;
-    --decorative-color: #ff0070;
-    --bg-img: url(../images/cover-image-dark.png);
-  }
-
-  .decorative_element {
-    line-height: 25px;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding-inline-end: 25px;
-    color: var(--accent-color);
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-  }
 }
 
 .page.theme_dark {
@@ -52,15 +24,8 @@
   --bg-img: url(../images/cover-image-dark.png);
 }
 
-.theme_dark .decorative_element {
-  line-height: 25px;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding-inline-end: 25px;
-  color: var(--accent-color);
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-}
+
+
+
+
+
