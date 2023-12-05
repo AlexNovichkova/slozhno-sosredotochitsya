@@ -413,7 +413,14 @@
 }
 
 .how_concentrate_better_conteiner {
-  min-width: 315px;
+  max-width: 315px;
+  width: 100%;
+}
+
+@media (1024px < width <= 1400px) {
+  .how_concentrate_better_conteiner {
+    min-width: 315px;
+  }
 }
 
 @media (768px < width <= 1024px) {
@@ -433,8 +440,7 @@
     width: 100%;
   }
   .advice_description {
-    max-width: 472px;
-    width: 100%;
+    width: clamp(472px, 100%, 100%);
   }
 }
 
@@ -445,6 +451,13 @@
   .HOW_section {
     padding: 0 10px;
     margin-block-start: 50px;
+  }
+  .how_concentrate_better_conteiner {
+    width: 100%;
+    max-width: 100%;
+  }
+  .advice_description {
+    width: 100%;
   }
 }
 
